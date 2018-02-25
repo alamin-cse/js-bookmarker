@@ -1,1 +1,1 @@
-# js-bookmerker
+# js-bookmarker
