@@ -15,7 +15,11 @@ function saveBookmark(e) {
     url : siteUrl
   }
 
-  console.log(bookmark);
+  // Local Storage storage
+  localStorage.setItem('test', 'hello world');
+  console.log(localStorage.getItem('test'));
+  localStorage.removeItem('test');
+  console.log(localStorage.getItem('test'));
 
 // Prevent form from submitting
   e.preventDefault();
