@@ -2,6 +2,8 @@
 
 document.getElementById('myForm').addEventListener('submit', saveBookmark);
 
-function saveBookmark() {
+function saveBookmark(e) {
   console.log('hi there');
+
+  e.preventDefault();
 }
