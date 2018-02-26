@@ -15,11 +15,17 @@ function saveBookmark(e) {
     url : siteUrl
   }
 
-  // Local Storage storage
-  localStorage.setItem('test', 'hello world');
-  console.log(localStorage.getItem('test'));
-  localStorage.removeItem('test');
-  console.log(localStorage.getItem('test'));
+  // Check bookmarks is null
+  if(localStorage.getItem('bookmarks') === null ) {
+    // init array
+    var bookmarks = [];
+  }
+  //
+  // // Local Storage
+  // localStorage.setItem('test', 'hello world');
+  // console.log(localStorage.getItem('test'));
+  // localStorage.removeItem('test');
+  // console.log(localStorage.getItem('test'));
 
 // Prevent form from submitting
   e.preventDefault();
